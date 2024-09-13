@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=585FJ-UVH73-45GT5-G4SI0-83HTJ-W5M6E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\Program Project gather\STM32\Project_University\单双击按键功能及计次\text.uvprojx
+Project File Date:  09/12/2024
+
+<h2>Output:</h2>
+Build target 'Target1'
+compiling Key.c...
+Hardware\Multi_Button\Key.H(15): error:  #7: unrecognized token
+  void Single_Click(void)；//单击
+Hardware\Multi_Button\Key.H(15): error:  #130: expected a "{"
+  void Single_Click(void)；//单击
+Hardware\Multi_Button\Key.H(16): error:  #7: unrecognized token
+  void Double_Click(void)；//双击
+Hardware\Multi_Button\Key.H(17): error:  #7: unrecognized token
+  void Long_Preass_Start(void)；//长按
+Hardware\Multi_Button\Key.H(18): error:  #7: unrecognized token
+  void Button_Start(void)；
+Hardware\Multi_Button\Key.H(1): error:  #37: the #endif for this directive is missing
+  #ifndef __KEY_H
+Hardware\Multi_Button\Key.c(24): warning:  #12-D: parsing restarts here after previous syntax error
+  {
+Hardware\Multi_Button\Key.c(26): error:  #20: identifier "button_id" is undefined
+    switch(button_id)
+Hardware\Multi_Button\Key.c(29): error:  #118: a void function may not return a value
+        return GPIO_ReadInputDataBit(KEY_PORT, KEY_PIN1);
+Hardware\Multi_Button\Key.c(31): error:  #118: a void function may not return a value
+        return GPIO_ReadInputDataBit(KEY_PORT, KEY_PIN2);
+Hardware\Multi_Button\Key.c(33): error:  #118: a void function may not return a value
+        return GPIO_ReadInputDataBit(KEY_PORT, KEY_PIN3);
+Hardware\Multi_Button\Key.c(35): error:  #118: a void function may not return a value
+        return GPIO_ReadInputDataBit(KEY_PORT, KEY_PIN4);
+Hardware\Multi_Button\Key.c(37): error:  #118: a void function may not return a value
+        return 0;
+Hardware\Multi_Button\Key.c(54): error:  #20: identifier "button1" is undefined
+        button_init(&button1, read_button_GPIO, Valid, btn1_id);
+Hardware\Multi_Button\Key.c(54): error:  #20: identifier "read_button_GPIO" is undefined
+        button_init(&button1, read_button_GPIO, Valid, btn1_id);
+Hardware\Multi_Button\Key.c(55): error:  #20: identifier "button2" is undefined
+        button_init(&button2, read_button_GPIO, Valid, btn2_id);
+Hardware\Multi_Button\Key.c(56): error:  #20: identifier "button3" is undefined
+        button_init(&button3, read_button_GPIO, Valid, btn3_id);
+Hardware\Multi_Button\Key.c(57): error:  #20: identifier "button4" is undefined
+        button_init(&button4, read_button_GPIO, Valid, btn4_id);
+Hardware\Multi_Button\Key.c(144): error:  #20: identifier "button1" is undefined
+        button_start(&button1);
+Hardware\Multi_Button\Key.c(145): error:  #20: identifier "button2" is undefined
+        button_start(&button2);
+Hardware\Multi_Button\Key.c(146): error:  #20: identifier "button3" is undefined
+        button_start(&button3);
+Hardware\Multi_Button\Key.c(147): error:  #20: identifier "button4" is undefined
+        button_start(&button4);
+Hardware\Multi_Button\Key.c(151): error:  #247: function "Single_Click" has already been defined
+  void Single_Click()
+Hardware\Multi_Button\Key.c(153): error:  #20: identifier "button1" is undefined
+        button_attach(&button1, SINGLE_CLICK, Callback_SINGLE_CLICK_Handler);
+Hardware\Multi_Button\Key.c(154): error:  #20: identifier "button2" is undefined
+        button_attach(&button2, SINGLE_CLICK, Callback_SINGLE_CLICK_Handler);
+Hardware\Multi_Button\Key.c(155): error:  #20: identifier "button3" is undefined
+        button_attach(&button3, SINGLE_CLICK, Callback_SINGLE_CLICK_Handler);
+Hardware\Multi_Button\Key.c(156): error:  #20: identifier "button4" is undefined
+        button_attach(&button4, SINGLE_CLICK, Callback_SINGLE_CLICK_Handler);
+Hardware\Multi_Button\Key.c(162): error:  #20: identifier "button1" is undefined
+        button_attach(&button1, DOUBLE_CLICK, Callback_DOUBLE_Click_Handler);
+Hardware\Multi_Button\Key.c(163): error:  #20: identifier "button2" is undefined
+        button_attach(&button2, DOUBLE_CLICK, Callback_DOUBLE_Click_Handler);
+Hardware\Multi_Button\Key.c(164): error:  #20: identifier "button3" is undefined
+        button_attach(&button3, DOUBLE_CLICK, Callback_DOUBLE_Click_Handler);
+Hardware\Multi_Button\Key.c(165): error:  #20: identifier "button4" is undefined
+        button_attach(&button4, DOUBLE_CLICK, Callback_DOUBLE_Click_Handler);
+Hardware\Multi_Button\Key.c: 1 warning, 30 errors
+".\Objects\text.axf" - 30 Error(s), 1 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Program Project gather\STM32\Project_University\单双击按键功能及计次\RTE
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
